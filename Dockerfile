@@ -26,10 +26,14 @@ VOLUME /progress \
        /torrents \
        /var/log/deluge
 
+RUN mkdir /var/lib/deluge/state
+
 COPY start.sh /var/lib/deluge/
 COPY *.conf /var/lib/deluge/
 
 RUN mkdir -p /var/log/deluge && \
+    mkdir -p /var/lib/deluge/state && \
+    chown -R deluge:deluge /var/lib/deluge && \
     chown -R deluge:deluge /var/log/deluge && \
     chmod -R 750 /var/log/deluge && \
     chmod 755 /var/lib/deluge/start.sh

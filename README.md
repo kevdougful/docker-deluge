@@ -14,7 +14,7 @@ docker run -d \
   -p 58190:58190 \
   -p 58190:58190/udp \
   -p 8112:8112 \
-  -e DELUGED_USER <daemon user> \
-  -e DELUGED_PASS <daemon pass> \
+  -e DELUGED_USER=<daemon user> \
+  -e DELUGED_PASS=<daemon pass> \
   kevdougful/deluge
 ```
