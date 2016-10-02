@@ -1,5 +1,8 @@
 # Deluge Daemon Container
 
+
+[![](https://images.microbadger.com/badges/image/kevdougful/deluge.svg)](https://microbadger.com/images/kevdougful/deluge "Get your own image badge on microbadger.com")
+
 This container provides a Deluge Bittorrent daemon as well as the Deluge Web UI
 
 Run the container:
